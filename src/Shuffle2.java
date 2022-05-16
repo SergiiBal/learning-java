@@ -12,6 +12,7 @@ class Shuffle2 {
             }
             if (x == 1) {
                 System.out.print("d");
+                System.out.println("f");
                 x = x - 1;
             }
 
