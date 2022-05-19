@@ -13,6 +13,7 @@ public class DRoot {
                 sum = sum + arrayNumbers[i];
             }
           //  System.out.println(sum);
+            //
             n = sum;
             temp = Integer.toString(n);
             sum = 0;
