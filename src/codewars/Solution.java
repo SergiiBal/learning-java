@@ -39,8 +39,8 @@ class Solution {
         public static void main (String[]args){
 
             String[] names = new String[]{"Alex", "Jacob", "Mark", "Max"};
-            // String[] names = new String[]{};
-             //String[] names = new String[]{"Alex"};
+//            String[] names = new String[]{};
+//            String[] names = new String[]{"Alex"};
             //String[] names = new String[]{"Alex", "Jacob"};
             // String[] names = new String[]{"Alex", "Jacob", "Mark"};
             whoLikesIt(names);
