@@ -14,6 +14,7 @@ public class Maskify {
 //        for (int k=0; k< newCh.length; k++) {
 //            System.out.print(newCh[k]);
 //        }
+        //
         String newString = String.valueOf(newCh);
         return newString;
     }
