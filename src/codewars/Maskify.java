@@ -2,21 +2,11 @@ package codewars;
 
 public class Maskify {
     public static String maskify(String str) {
-        int a = 0;
-        char[] ch = new char[str.length()];
-        for (int i = 0; i < str.length(); i++) {
-            ch[i] = str.charAt(i);
-        }
-        char[] newCh = ch;
+        char[] ch = str.toCharArray();
         for (int j = 0; j < str.length() - 4; j++) {
-            newCh[j] = '#';
+            ch[j] = '#';
         }
-//        for (int k=0; k< newCh.length; k++) {
-//            System.out.print(newCh[k]);
-//        }
-        //
-        String newString = String.valueOf(newCh);
-        return newString;
+        return String.valueOf(ch);
     }
 
     public static void main(String[] args) {
