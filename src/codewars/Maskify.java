@@ -9,8 +9,17 @@ public class Maskify {
         return String.valueOf(ch);
     }
 
+     static String maskifyNew(String str) {
+        if (str.length()<=4) {
+            return str;
+        } else {
+            return "#".repeat(str.length()-4)
+                    .concat(str.substring(str.length()-4));
+        }
+    }
+
     public static void main(String[] args) {
-      String p = maskify("hghgt");
+      String p = maskifyNew("12354356436546456");
         System.out.println(p);
     }
 }
