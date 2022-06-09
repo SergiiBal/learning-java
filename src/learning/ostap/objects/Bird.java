@@ -1,11 +1,13 @@
 package learning.ostap.objects;
 
+import java.util.Objects;
+
 public class Bird {
     private String name;
     private int age = 0;
     private static int numberOfWings = 2;
     private String colour;
-    private int wingspan = 0;
+    private int wingspan = 2;
 
     public Bird(String name, String colour) {
         this.name = name;
@@ -17,6 +19,7 @@ public class Bird {
         this.age = age;
         this.colour = colour;
         this.wingspan = wingspan;
+        Bird.numberOfWings = numberOfWings;
     }
 
     public String getName() {
@@ -68,5 +71,18 @@ public class Bird {
                 ", colour='" + colour + '\'' +
                 ", wingspan=" + wingspan +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Bird bird = (Bird) o;
+        return age == bird.age && wingspan == bird.wingspan && name.equals(bird.name) && colour.equals(bird.colour);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, age, colour, wingspan);
     }
 }

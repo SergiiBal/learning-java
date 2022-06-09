@@ -1,47 +1,29 @@
 package learning.ostap.objects;
 
-public class Cat {
-    private String name;
-    private  int age = 0;
+public class Cat extends Animal {
     private static int palmsAmount = 4;
-    private  String colour = "indefinite";
+    private CatColor color = CatColor.UNKNOWN;
 
-    public Cat (String name) {
-        this.name = name;
+    public Cat(String name, int age, int palmsAmount, String color) {
+        super(name, age);
+        this.color = CatColor.valueOf(color.toUpperCase());
+        Cat.palmsAmount = palmsAmount;
     }
 
-    public  Cat (String name, int age) {
-        this.name = name;
-        this.age = age;
-    }
-    public  Cat (String name, int age, int palmsAmount, String colour) {
-        this.name = name;
-        this.age = age;
-        this.colour = colour;
+    public Cat(String name, int age) {
+        super(name, age);
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public int getAge() {
-        return age;
+    public Cat(String name) {
+        super(name);
     }
 
     public static int getPalmsAmount() {
         return palmsAmount;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
-
-    public void setColour(String colour) {
-        this.colour = colour;
+    public void setColor(CatColor color) {
+        this.color = color;
     }
 
     public static void setPalmsAmount(int palmsAmount) {
@@ -53,7 +35,7 @@ public class Cat {
         return "Cat{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
-                ", colour='" + colour + '\'' +
+                ", colour='" + color + '\'' +
                 ", palms=" + palmsAmount +
                 '}';
     }

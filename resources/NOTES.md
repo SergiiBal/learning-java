@@ -34,4 +34,11 @@
 * contains - повертає True or False якщо рядок містить літери
 
 ## Access modifiers
-private (клас) /default(package private) папка /public повний/
+private (клас) /default(package private) папка /public повний/ protected тільки ті хто наслідують
+
+## Enum 
+TODO: Discrabe in your words enum. Make example for cats and birds.
+
+## Inharitance
+TODO: Read every method of Object Class and try them on Cats anf Bird objects, except wait, notify, finalize
+TO DO: Make Bird extend Animal

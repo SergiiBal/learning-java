@@ -19,13 +19,13 @@ public class PlayGround {
         System.out.println(catOfOstap);
 
         System.out.println("Once Ostap's cat played with the mirror, where he saw himmself");
-        catOfOstap.setColour("red&white");
+        catOfOstap.setColor(CatColor.BLACK);
         System.out.println("Sergii's cat watched frontal camera and figured out that he is black&white");
         System.out.println(catOfSergii);
         System.out.println(catOfOstap);
 
         System.out.println(" A little bit later cats met each other, have something close to date, and after that new cat was born");
-        Cat catOfOksana = new Cat("Rex", 1, 4, "black&red&white");
+        Cat catOfOksana = new Cat("Rex", 1, 4, "red");
         ///new class or exception
         System.out.println(catOfOksana);
 
@@ -42,7 +42,10 @@ public class PlayGround {
         System.out.println(predatorBird);
         System.out.println("he met a new friend in birdcage");
         Bird eagleFriend = new Bird("Romeo", "black");
+        Bird eagleFriend2 = new Bird("Romeo", "black");
         System.out.println(eagleFriend);
+        System.out.println(predatorBird.equals(eagleFriend));
+        System.out.println(eagleFriend2.equals(eagleFriend));
         ///
     }
 }
@@ -54,6 +57,13 @@ Homework
 3) Create Bird and Dog Classes and play with Objects
 4) Search for Junior Position
 https://rabota.ua/ua/company788/vacancy9165606
+    Basic knowledge of object-oriented programming
+    Basic knowledge of REST API
+    Basic knowledge of Git
+    Basic knowledge of Java
+    Basic knowledge of SQL- Basic knowledge of HTML/CSS
+    Basic knowledge and interest in data structures and algorithms.
+    Good verbal and written English
 https://rabota.ua/ua/company2934598/vacancy9178324
 https://www.work.ua/jobs/4812716/
 https://www.work.ua/jobs/4732732/
