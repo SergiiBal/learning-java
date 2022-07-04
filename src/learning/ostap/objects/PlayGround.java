@@ -3,7 +3,7 @@ package learning.ostap.objects;
 public class PlayGround {
     public static void main(String[] args) {
         Cat catOfSergii = new Cat("Tom", 2);
-        Cat catOfOstap = new Cat("Bob");
+        Cat catOfOstap = new Cat("Rex");
         System.out.println(catOfSergii);
         System.out.println(catOfOstap);
 
@@ -30,23 +30,35 @@ public class PlayGround {
         System.out.println(catOfOksana);
 
         System.out.println("And then little cat was detected by the bird predator");
-        Bird predatorBird = new Bird("eagle", 4, 2, "grey", 90);
+        Bird predatorBird = new Bird(BirdName.EAGLE.name(), 4, 2, "grey", 90);
         ///
         System.out.println(predatorBird);
         System.out.println("one year later");
         predatorBird.setAge(5);
-        predatorBird.setColour("dark grey");
+        predatorBird.setColor("dark grey");
         System.out.println(predatorBird);
         System.out.println("once eagle was caught, sent to the zoo, and renamed");
-        predatorBird.setName("Bernardo");
+        predatorBird.setName(String.valueOf(BirdName.BERNARDO));
         System.out.println(predatorBird);
         System.out.println("he met a new friend in birdcage");
-        Bird eagleFriend = new Bird("Romeo", "black");
-        Bird eagleFriend2 = new Bird("Romeo", "black");
+        Bird eagleFriend = new Bird(BirdName.ROMEO.name(), predatorBird.getAge(),  "black");
+        Bird eagleFriend2 = new Bird(BirdName.ROMEO.name(), predatorBird.getAge(), "black");
         System.out.println(eagleFriend);
         System.out.println(predatorBird.equals(eagleFriend));
         System.out.println(eagleFriend2.equals(eagleFriend));
         ///
+        System.out.println(predatorBird.hashCode());
+        System.out.println(eagleFriend.hashCode());
+        System.out.println(eagleFriend2.hashCode());
+        System.out.println(eagleFriend2.equals(eagleFriend));
+//        public Bird clone()         {
+//            return super.clone();
+//        }
+      //  Cat catOfPolina = null;
+     //  Cat catOfPolina = (Cat) catOfOstap.clone();
+     ///   public class Cat implements Cloneable {
+        System.out.println(predatorBird);
+
     }
 }
 

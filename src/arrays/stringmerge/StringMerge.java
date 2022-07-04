@@ -42,4 +42,9 @@ public class StringMerge {
         System.out.println(stringMerge("coding", "anywhere", 'n'));
 
     }
+
+    @Override
+    public String toString() {
+        return "StringMerge{}";
+    }
 }

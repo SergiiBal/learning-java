@@ -1,3 +1,5 @@
+package headToJava;
+
 class Shuffle2 {
     public static void main(String[] args) {
         int x = 3;
@@ -12,7 +14,7 @@ class Shuffle2 {
             }
             if (x == 1) {
                 System.out.print("d");
-                System.out.println("f");
+         //       System.out.println("f");
                 x = x - 1;
             }
 

@@ -1,4 +1,4 @@
-package test;
+package codewars;
 
 public class SumExceptBiggestAndLowest {
     public static int summm(int[] inputArray3) {

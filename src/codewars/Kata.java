@@ -1,4 +1,4 @@
-package test;
+package codewars;
 
 public class Kata {
     public static int[] squareOrSquareRoot(int[] inputArray) {

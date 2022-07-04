@@ -1,4 +1,4 @@
-package javaExample;
+package headToJava;
 
 class Triangle {
     double area;

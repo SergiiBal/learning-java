@@ -1,5 +1,6 @@
 package learning.ostap.objects;
 
+
 public class Cat extends Animal {
     private static int palmsAmount = 4;
     private CatColor color = CatColor.UNKNOWN;
@@ -11,11 +12,11 @@ public class Cat extends Animal {
     }
 
     public Cat(String name, int age) {
-        super(name, age);
+        super(name, age, CatColor.UNKNOWN.name());
     }
 
     public Cat(String name) {
-        super(name);
+        super(name, 0, CatColor.UNKNOWN.name());
     }
 
     public static int getPalmsAmount() {
