@@ -1,6 +1,6 @@
 package learning.ostap.objects;
 
-public class Animal {
+public abstract class Animal {
     protected String name;
     protected String color;
     protected int age = 0;
@@ -10,6 +10,8 @@ public class Animal {
     }
 
     public Animal(String name, int age, String color) {
+        this.name = name;
+        this.age = age;
         this.color = color;
     }
 
@@ -50,6 +52,8 @@ public class Animal {
     public void setColor(String color) {
         this.color = color;
     }
+
+
 }
 
 

@@ -1,6 +1,8 @@
 package learning.ostap.objects;
 
 
+import java.util.Objects;
+
 public class Cat extends Animal {
     private static int palmsAmount = 4;
     private CatColor color = CatColor.UNKNOWN;
@@ -39,5 +41,18 @@ public class Cat extends Animal {
                 ", colour='" + color + '\'' +
                 ", palms=" + palmsAmount +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Cat cat = (Cat) o;
+        return color == cat.color;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(color);
     }
 }

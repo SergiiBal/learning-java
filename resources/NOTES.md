@@ -42,3 +42,9 @@ TODO: Discrabe in your words enum. Make example for cats and birds.
 ## Inharitance
 TODO: Read every method of Object Class and try them on Cats anf Bird objects, except wait, notify, finalize
 TO DO: Make Bird extend Animal
+
+## Homework
+
+
+### 06.07.2020 
+* Create one more Transportation Service in Interfaces package, with default(no arguments) and one parameter constructors. Use in playground.
