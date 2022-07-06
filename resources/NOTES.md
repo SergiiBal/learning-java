@@ -20,7 +20,6 @@
 * Search anything ``Shift + Shift``
 * Refactor/Rename ``Shift + F6``
 * Generate Constructors, Getters, Setters ``Alt + Insert``(inside class, not method)
-* 
 
 ## Useful string methods
 * concat - доповнити словом 
@@ -48,3 +47,9 @@ TO DO: Make Bird extend Animal
 
 ### 06.07.2020 
 * Create one more Transportation Service in Interfaces package, with default(no arguments) and one parameter constructors. Use in playground.
+* Create dictionary class with methods addTranslation, translate
+* Create season information class with methods 
+  * isValidSeason (String seasonName) returns boolean if season name is correct; isValidSeason("AutuMn") = true;
+  * getSeasonMonths (String seasonName) returns List of months of season or empty list if not validSeason;
+  * isMonthInSeason (String month, String seasonName) returns true or false
+  
