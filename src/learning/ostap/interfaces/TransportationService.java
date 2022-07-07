@@ -1,9 +1,8 @@
 package learning.ostap.interfaces;
 
-import learning.ostap.objects.Animal;
-
 public interface TransportationService {
-    void transfer(Animal animal);
+   // void transfer(Animal1 animal);
+    void transferDogs(Dog dog);
 }
 
 
