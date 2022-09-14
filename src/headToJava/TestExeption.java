@@ -4,7 +4,7 @@ public class TestExeption {
     public static void main(String[] args) {
 
         String test = "yes";
-
+        doRunTimeRisky(test);
         try {
             System.out.println("Начало try");
             doRisky(test);
@@ -25,9 +25,22 @@ public class TestExeption {
         System.out.println("Конец опасного метода");
         return;
     }
+
+    static void doRunTimeRisky(String test) {
+        System.out.println("Начало опасного метода");
+        if ("yes".equals(test)) {
+            throw new ScaryRunTimeException();
+        }
+        System.out.println("Конец опасного метода");
+        return;
+    }
 }
+
+
 
 class ScaryException extends Exception {
 }
 
+class ScaryRunTimeException extends RuntimeException {
+}
 
