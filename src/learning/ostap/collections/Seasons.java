@@ -2,7 +2,6 @@ package learning.ostap.collections;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Objects;
 
 public class Seasons {
     public static void main(String[] args) {
@@ -25,8 +24,6 @@ public class Seasons {
             calendar2.put(calendar.get(i), i);
         }
         System.out.println(calendar2);
-    //    calendar2 = calendar.replaceAll();
-
         String season = "Summer";
         String month = "July";
         if (calendar.containsValue(season)) {
@@ -35,10 +32,5 @@ public class Seasons {
         } else {
             System.out.println("Season does not exists");
         }
-//        String month = "April";
-//        if (calendar.containsKey(month)) {
-//            System.out.println(calendar.get(month));
-//        }
-
     }
 }

@@ -4,16 +4,16 @@ public class TestExeption {
     public static void main(String[] args) {
 
         String test = "yes";
-        // "not yes"
-try {
-    System.out.println("Начало try");
-    doRisky(test);
-    System.out.println("Конец try");
-} catch (ScaryException se) {
-    System.out.println("Жуткое исключение");
-} finally {
-    System.out.println("finally");
-}
+
+        try {
+            System.out.println("Начало try");
+            doRisky(test);
+            System.out.println("Конец try");
+        } catch (ScaryException se) {
+            System.out.println("Жуткое исключение");
+        } finally {
+            System.out.println("finally");
+        }
         System.out.println(" Конец main");
     }
 
